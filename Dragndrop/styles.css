@@ -35,8 +35,11 @@ body {
     border: 1px solid #eee;
     box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
     border-radius: 20px;
+    background-color: aqua;
     padding: 0.8rem 1rem;
     color: #828282;
+    text-align: center;
+    cursor: grab;
 }
 
 .item:active {
@@ -56,4 +59,16 @@ body {
 }
 .done {
     background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+    border: 1px solid rgb(73, 198, 237);
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    border-top: 2px solid blueviolet;
 }
