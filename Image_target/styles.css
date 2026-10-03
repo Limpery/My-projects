@@ -22,7 +22,7 @@ body {
     padding: 20px;
 }
 
-.slider {
+.slide {
     height: 80vh;
     border-radius: 20px;
     margin: 10px;
@@ -33,13 +33,24 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    transition: all 500ms ease-in-out;
 }
 
 
-.slider h3 {
+.slide h3 {
     position: absolute;
     font-size: 24px;
     bottom: 20px;
     left: 20px;
     margin: 0;
+    opacity: 0;
+}
+
+.slide.active {
+    flex: 10;
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3 ease-in;
 }
