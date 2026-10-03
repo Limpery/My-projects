@@ -23,7 +23,7 @@ body {
 }
 
 .slide {
-    height: 80vh;
+    height: 90vh;
     border-radius: 20px;
     margin: 10px;
     cursor: pointer;
@@ -47,10 +47,10 @@ body {
 }
 
 .slide.active {
-    flex: 10;
+    flex: 3;
 }
 
 .slide.active h3 {
     opacity: 1;
-    transition: opacity 0.3 ease-in;
+    transition: opacity 0.3s ease-in 0.4s;
 }
