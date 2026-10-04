@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: aqua;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 20px;
+}
+
+.placeholder {
+    width: 25%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    
+}
+
+.placeholder {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.placeholder.heaven {
+    background: linear-gradient(90deg, #ebf0f1 0%, #47daf1 180%);
+}
+.placeholder.limbo {
+    background: linear-gradient(90deg, #47daf1 0%, #043156 180%);
+}
+.placeholder.hell {
+    background: linear-gradient(90deg, #043156 0%, #f60000 180%);
+}
+
+.placeholder.dragenter {
+    opacity: 0.8;
+}
+.placeholder.dragleave {
+    opacity: 1;
+}
+
+
+.item {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: grab;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, #d8fafa 0%, #84f8be 180%);
+    width: 100%;
+    height: 50px;
+    box-shadow: 1px 1px 10px rgb(14, 0, 0, 0.10);
+}
+
+.item:active {
+    cursor: pointer;
+}
+
+.item.dragstart {
+    border: 2px solid red;
+}
+
+.item.hide {
+    display: none;
+}
